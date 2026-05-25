@@ -5,6 +5,12 @@ skills, agents, hooks, and headless `claude -p` usage — against a maintained
 best-practices reference, and writes evidence-bound findings. Ships with an optional
 scheduled job that keeps the reference current from Anthropic's public documentation.
 
+> **Built on Anthropic's content.** The best practices here are derived from Anthropic's
+> own official tutorials, Academy courses, and documentation — this repo synthesises and
+> links that public material, it does not reproduce gated course content. Best-practice
+> details change, so **always verify against the current sources** (see
+> [Sources & attribution](#sources--attribution)). Not affiliated with or endorsed by Anthropic.
+
 ## Contents
 
 | Path | What it is |
