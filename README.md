@@ -114,10 +114,19 @@ The best practices here are derived from **Anthropic's own official tutorials, A
 courses, and documentation**. This repository synthesises and links that public material —
 it does not reproduce gated course content.
 
+**Reference material:**
+
 - Anthropic Academy (tutorials & courses) — <https://anthropic.skilljar.com>
 - Claude Code docs — <https://code.claude.com/docs>
 - Claude platform docs — <https://platform.claude.com/docs>
 - Anthropic engineering blog — <https://www.anthropic.com/engineering>
+
+**What's new / changelogs** (what the weekly refresh tracks for changes):
+
+- Claude Code changelog — <https://code.claude.com/docs/en/changelog>
+- Platform / API release notes — <https://platform.claude.com/docs/en/release-notes/overview>
+- Help Center release notes — <https://support.claude.com/en/articles/12138966-release-notes>
+- Anthropic news (model launches, pricing) — <https://www.anthropic.com/news>
 
 ## License
 
