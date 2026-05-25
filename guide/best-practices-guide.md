@@ -3,9 +3,13 @@
 **Last reviewed:** 2026-05-25
 **Status:** starter reference — keep current with the weekly refresh (`routine/weekly-refresh.md`).
 
-A cited synthesis of public Claude Code best practices, used as the standard for the
+A cited synthesis of Claude Code best practices drawn from **Anthropic's official
+tutorials, Academy courses, and documentation**, used as the standard for the
 best-practices auditor. Claims are point-in-time; verify version-specific details against
-current docs. Links point to Anthropic's public documentation.
+current docs. This file links and paraphrases public material — it does not reproduce
+gated course content. Sources: Anthropic Academy (<https://anthropic.skilljar.com>),
+Claude Code docs (<https://code.claude.com/docs>), platform docs
+(<https://platform.claude.com/docs>).
 
 ---
 

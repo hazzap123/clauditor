@@ -102,10 +102,13 @@ as the target.
   not verdicts.
 - Not affiliated with or endorsed by Anthropic.
 
-## Sources
+## Sources & attribution
 
-Best practices are synthesised from Anthropic's public documentation:
+The best practices here are derived from **Anthropic's own official tutorials, Academy
+courses, and documentation**. This repository synthesises and links that public material —
+it does not reproduce gated course content.
 
+- Anthropic Academy (tutorials & courses) — <https://anthropic.skilljar.com>
 - Claude Code docs — <https://code.claude.com/docs>
 - Claude platform docs — <https://platform.claude.com/docs>
 - Anthropic engineering blog — <https://www.anthropic.com/engineering>
