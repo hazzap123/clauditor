@@ -1,6 +1,6 @@
-# Claude Code Best-Practices Auditor
+# clauditor
 
-A Claude Code subagent that audits a Claude Code setup — `CLAUDE.md`, `settings.json`,
+**A Claude Code best-practices auditor.** A Claude Code subagent that audits a Claude Code setup — `CLAUDE.md`, `settings.json`,
 skills, agents, hooks, and headless `claude -p` usage — against a maintained
 best-practices reference, and writes evidence-bound findings. Ships with an optional
 scheduled job that keeps the reference current from Anthropic's public documentation.
