@@ -15,7 +15,7 @@ scheduled job that keeps the reference current from Anthropic's public documenta
 
 | Path | What it is |
 |------|------------|
-| `agents/best-practices-auditor.md` | The auditor subagent. Reads the guide (and an optional decisions file), audits your config, writes a findings file. |
+| `agents/clauditor.md` | The auditor subagent. Reads the guide (and an optional decisions file), audits your config, writes a findings file. |
 | `guide/best-practices-guide.md` | The reference the auditor checks against — a cited synthesis of public Claude Code best practices. Dated; meant to be kept current. |
 | `decisions/resolved-decisions.example.md` | Template for recording deliberate divergences so the auditor treats them as intentional rather than flagging them as gaps. |
 | `routine/weekly-refresh.md` | Prompt and setup steps for an optional scheduled agent that diffs Anthropic's docs against the guide and opens a pull request. |
@@ -30,10 +30,10 @@ scheduled job that keeps the reference current from Anthropic's public documenta
 1. **Copy the agent** into your agents directory:
    ```bash
    # global (applies to all projects)
-   cp agents/best-practices-auditor.md ~/.claude/agents/
+   cp agents/clauditor.md ~/.claude/agents/
 
    # or per-project
-   cp agents/best-practices-auditor.md /path/to/project/.claude/agents/
+   cp agents/clauditor.md /path/to/project/.claude/agents/
    ```
 
 2. **Copy the guide** (and, optionally, the decisions template) into your repo — `docs/` is conventional:
@@ -42,7 +42,7 @@ scheduled job that keeps the reference current from Anthropic's public documenta
    cp decisions/resolved-decisions.example.md  /path/to/project/docs/resolved-decisions.md
    ```
 
-3. **Set the paths.** Open `best-practices-auditor.md` and set `GUIDE_PATH` (and
+3. **Set the paths.** Open `clauditor.md` and set `GUIDE_PATH` (and
    `DECISIONS_PATH`, if used) near the top to where you put those files. This is the
    only configuration step.
 
@@ -53,16 +53,16 @@ Project agents register immediately. A global agent is available in new sessions
 In any Claude Code session:
 
 ```
-audit my Claude Code setup
+run clauditor
 ```
 
-The agent reads the guide, sweeps your config, and writes a findings file
-(default `docs/auditor-findings.md`) with five sections: **Aligned**, **Gaps**,
-**Divergences**, **Headless-mode findings**, and a ranked **action shortlist**.
-Every finding cites a file path and a source.
+(or "clauditor", or "audit my Claude Code setup"). The agent reads the guide, sweeps your
+config, and writes a findings file (default `docs/auditor-findings.md`) with five sections:
+**Aligned**, **Gaps**, **Divergences**, **Headless-mode findings**, and a ranked
+**action shortlist**. Every finding cites a file path and a source.
 
 It is a subagent, not a slash command — invoke it by asking, or name it explicitly:
-`use the best-practices-auditor agent to audit ~/.claude`.
+`use the clauditor agent to audit ~/.claude`.
 
 ## Resolved decisions (optional)
 

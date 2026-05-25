@@ -29,6 +29,16 @@ docs/resolved-decisions.md or decisions/), read it. Do NOT propose changes that
 contradict a recorded decision; flag any conflict in the PR description for human review.
 
 SOURCES TO CHECK (fetch current state; cite the exact URL for every proposed change):
+
+PRIMARY — the changelog / release-notes feeds (read entries dated AFTER the guide's
+"Last reviewed" date; this is the low-noise signal of what actually changed):
+- Claude Code changelog — https://code.claude.com/docs/en/changelog
+- Platform / API release notes — https://platform.claude.com/docs/en/release-notes/overview
+- Help Center release notes — https://support.claude.com/en/articles/12138966-release-notes
+- Anthropic news (model launches, pricing) — https://www.anthropic.com/news
+
+SECONDARY — full doc pages, for context on anything the changelog flags, and a deeper
+sweep roughly monthly (changelogs can miss silently-reworded conceptual guidance):
 - Claude Code docs — https://code.claude.com/docs (skills, subagents, headless claude -p,
   hooks, context window, MCP, settings)
 - Platform docs — https://platform.claude.com/docs (prompt caching, models, pricing)
